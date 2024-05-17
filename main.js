@@ -8,23 +8,11 @@ if (!s || s == " "){
 }
 
 
-// step 2podeli testString na "split" (napravicu novi arrey gde ici testString podeljen na svako slovo
+// step 2podeli testString na "split" (napravicu novi arrey gde ici testString podeljen na svako slovo, i pretvori sve u mala slova 
 
 let newTestString = s.toLowerCase().split("");
 // step 3 napravi jos jedan arrej gde ces da dodas sve elemente is new test areja i da cekiras da li se i koji ponavlja tj ne ponavlja.
 let letterSum = [];
-//for (let i = 0; i < newTestString.lenght; i++){
-//    let count = 0;
-//    for (let j = 0; j < newTestString.lenght; j ++){
- //       if (newTestString[i] == newTestString[j]){
-
- //           count ++;
- //       }
- //   } if (count == 1){
-       
-//      console.log(newTestString[i]);
-//    }
-//}
 //step 4. loopuj skroz new test string, dodaj svaki element u letter sum arrey i povecaj za jedan ako je karakter vec i arreyu, ako nije onda ostaje 1;
 for ( n of newTestString){
     letterSum[n] = (letterSum[n] || 0 ) + 1;
