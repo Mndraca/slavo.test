@@ -10,7 +10,7 @@ if (!s || s == " "){
 
 // step 2podeli testString na "split" (napravicu novi arrey gde ici testString podeljen na svako slovo
 
-let newTestString = s.split("");
+let newTestString = s.toLowerCase().split("");
 // step 3 napravi jos jedan arrej gde ces da dodas sve elemente is new test areja i da cekiras da li se i koji ponavlja tj ne ponavlja.
 let letterSum = [];
 //for (let i = 0; i < newTestString.lenght; i++){
@@ -48,7 +48,7 @@ return "Svaki karakter se ponavlja!";
 };
 
 
-const testString = "milenam";
+const testString = "Milenam";
 console.log("The first non-repeating character is:", firstNonRepeatingCharacter(testString)); // Output: "w"
 
 
